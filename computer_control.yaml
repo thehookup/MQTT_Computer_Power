@@ -1,0 +1,20 @@
+switch:
+  - platform: mqtt
+    name: "Lindsays PC"
+    state_topic: "state/PC"
+    command_topic: "commands/PC"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: false
+    
+sensor:
+  - platform: mqtt
+    name: "Guest Room Temperature"
+    state_topic: "guestRoom/temperature"
+  - platform: mqtt
+    name: "Guest Room Humidity"
+    state_topic: "guestRoom/humidity"  
+    
+    
+    
+    
