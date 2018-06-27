@@ -115,6 +115,12 @@ void callback(char* topic, byte* payload, unsigned int length)
       delay(1000);
       digitalWrite(powerButtonPin, LOW);
     }
+    if (newPayload == "FORCE OFF")
+    {
+      digitalWrite(powerButtonPin, HIGH);
+      delay(10000);
+      digitalWrite(powerButtonPin, LOW);
+    }
   }
 }
 
